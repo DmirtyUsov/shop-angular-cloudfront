@@ -1,6 +1,6 @@
 # Shop Angular Cloudfront
 
-Angular version: ~12.
+Angular version: ~15.
 
 ## The purpose
 
@@ -12,10 +12,20 @@ All the necessary API endpoints are in the environments files `environment.ts` (
 
 ## Get up and running
 
-Prerequisites: NodeJS v14.20.x and higher
+Prerequisites: 
+- NodeJS v14.20.x and higher
+- AWS account
+- AWS CLI v2 
 
 Follow the steps:
 
-- git clone
-- npm i
-- ng serve
+- `git clone git@github.com:DmirtyUsov/shop-angular-cloudfront.git`
+- `git switch task-NumberYouCheck`
+- `npm i`
+- `npm run angular:build`  
+  >Generate output files dist/app
+- `cp .env.example .env`
+  > Copy and change name for file with environment variables  
+  IMPORTANT! Set variables in `.env` file
+- `npm run cdk:bootstrap`
+
