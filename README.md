@@ -27,5 +27,7 @@ Follow the steps:
 - `cp .env.example .env`
   > Copy and change name for file with environment variables  
   IMPORTANT! Set variables in `.env` file
-- `npm run cdk:bootstrap`
-
+- `npm run cdk:bootstrap` or  
+ `npm run cdk:bootstrap -- --profile YOURPROFILE`
+  > Depends on local settings
+- `npm run cdk:deploy`  

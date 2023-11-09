@@ -6,6 +6,7 @@ import { CdkStack } from './cdk/cdk-stack';
 const stackName = process.env.CDK_STACK_NAME || 'ShopAngularDima';
 
 const app = new cdk.App();
+
 new CdkStack(app, 'CdkStack', {
   env: {
     account: process.env.CDK_DEFAULT_ACCOUNT,
@@ -15,3 +16,5 @@ new CdkStack(app, 'CdkStack', {
   stackName,
   tags: { rsCrossCheck: stackName },
 });
+
+app.synth()
