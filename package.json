@@ -8,6 +8,8 @@
     "angular:lint": "npx -p @angular/cli ng lint",
     "angular:e2e": "npx -p @angular/cli ng e2e",
     "cdk:bootstrap": "npx cdk bootstrap",
+    "cdk:deploy": "cdk deploy",
+    "cdk:destroy": "cdk destroy",
     "prepare": "husky install",
     "lint:format": "npx --no-install lint-staged && npx --no-install pretty-quick --staged"
   },
